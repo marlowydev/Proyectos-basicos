@@ -121,10 +121,10 @@ void garaje(std::vector<Autos> &catalogo) {
                       std::cout << "Volviendo al menu en 5 segundos, no presione ninguna tecla..." << std::endl;
      
         }
-                     Sleep(5000);
-            system("cls");
+       
     } 
-   
+                  Sleep(5000);
+            system("cls");
     if (!hayAutos) {
         std::cout << "No tienes autos en tu garaje." << std::endl;
        Sleep(3000);
