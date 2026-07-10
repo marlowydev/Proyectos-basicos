@@ -49,7 +49,7 @@ Sleep(500);
 cout<<"2\n";
 Sleep(500);
 cout<<"1\n";
-
+//menu de wins
 if(opcionJugador != Pc){
 
     cout<<"Ganaste!\n\n";
@@ -61,7 +61,7 @@ if(opcionJugador != Pc){
     cout<<"Llevas "<<perdidas<<" Falladas\n";
 }
 
-
+//reinicio 
 cout<<"Quieres reintentarlo? (Y/N) ";
 cin>>reinicio;
 }while (reinicio == 'Y' || reinicio == 'y');
