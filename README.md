@@ -1,2 +1,5 @@
 # Proyectos-basicos
-Cobro 999999 dolares rusos por proyecto
+He creado este repositorio para ir creando juegos/programas por mi cuenta, actualmente este repositorio es exclusivo del lenguaje c++.
+Juegos creados:
+Penalty Taker.
+Console Forza.
