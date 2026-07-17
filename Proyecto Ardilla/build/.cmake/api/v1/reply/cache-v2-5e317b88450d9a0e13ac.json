@@ -2,6 +2,42 @@
 	"entries" : 
 	[
 		{
+			"name" : "ArdillasBeta_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/Home/Desktop/Proyecto_2/Proyectos-basicos/Proyecto Ardilla/build"
+		},
+		{
+			"name" : "ArdillasBeta_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "ArdillasBeta_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/Home/Desktop/Proyecto_2/Proyectos-basicos/Proyecto Ardilla"
+		},
+		{
 			"name" : "CMAKE_ADDR2LINE",
 			"properties" : 
 			[
@@ -939,7 +975,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "Project"
+			"value" : "ArdillasBeta"
 		},
 		{
 			"name" : "CMAKE_PROJECT_SPDX_LICENSE",

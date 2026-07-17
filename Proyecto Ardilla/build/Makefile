@@ -115,6 +115,139 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named ArdillasBeta
+
+# Build rule for target.
+ArdillasBeta: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ArdillasBeta
+.PHONY : ArdillasBeta
+
+# fast build rule for target.
+ArdillasBeta/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ArdillasBeta.dir\build.make CMakeFiles/ArdillasBeta.dir/build
+.PHONY : ArdillasBeta/fast
+
+src/ArdillasSkin.obj: src/ArdillasSkin.cpp.obj
+.PHONY : src/ArdillasSkin.obj
+
+# target to build an object file
+src/ArdillasSkin.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ArdillasBeta.dir\build.make CMakeFiles/ArdillasBeta.dir/src/ArdillasSkin.cpp.obj
+.PHONY : src/ArdillasSkin.cpp.obj
+
+src/ArdillasSkin.i: src/ArdillasSkin.cpp.i
+.PHONY : src/ArdillasSkin.i
+
+# target to preprocess a source file
+src/ArdillasSkin.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ArdillasBeta.dir\build.make CMakeFiles/ArdillasBeta.dir/src/ArdillasSkin.cpp.i
+.PHONY : src/ArdillasSkin.cpp.i
+
+src/ArdillasSkin.s: src/ArdillasSkin.cpp.s
+.PHONY : src/ArdillasSkin.s
+
+# target to generate assembly for a file
+src/ArdillasSkin.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ArdillasBeta.dir\build.make CMakeFiles/ArdillasBeta.dir/src/ArdillasSkin.cpp.s
+.PHONY : src/ArdillasSkin.cpp.s
+
+src/ardillas.obj: src/ardillas.cpp.obj
+.PHONY : src/ardillas.obj
+
+# target to build an object file
+src/ardillas.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ArdillasBeta.dir\build.make CMakeFiles/ArdillasBeta.dir/src/ardillas.cpp.obj
+.PHONY : src/ardillas.cpp.obj
+
+src/ardillas.i: src/ardillas.cpp.i
+.PHONY : src/ardillas.i
+
+# target to preprocess a source file
+src/ardillas.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ArdillasBeta.dir\build.make CMakeFiles/ArdillasBeta.dir/src/ardillas.cpp.i
+.PHONY : src/ardillas.cpp.i
+
+src/ardillas.s: src/ardillas.cpp.s
+.PHONY : src/ardillas.s
+
+# target to generate assembly for a file
+src/ardillas.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ArdillasBeta.dir\build.make CMakeFiles/ArdillasBeta.dir/src/ardillas.cpp.s
+.PHONY : src/ardillas.cpp.s
+
+src/combate.obj: src/combate.cpp.obj
+.PHONY : src/combate.obj
+
+# target to build an object file
+src/combate.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ArdillasBeta.dir\build.make CMakeFiles/ArdillasBeta.dir/src/combate.cpp.obj
+.PHONY : src/combate.cpp.obj
+
+src/combate.i: src/combate.cpp.i
+.PHONY : src/combate.i
+
+# target to preprocess a source file
+src/combate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ArdillasBeta.dir\build.make CMakeFiles/ArdillasBeta.dir/src/combate.cpp.i
+.PHONY : src/combate.cpp.i
+
+src/combate.s: src/combate.cpp.s
+.PHONY : src/combate.s
+
+# target to generate assembly for a file
+src/combate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ArdillasBeta.dir\build.make CMakeFiles/ArdillasBeta.dir/src/combate.cpp.s
+.PHONY : src/combate.cpp.s
+
+src/main.obj: src/main.cpp.obj
+.PHONY : src/main.obj
+
+# target to build an object file
+src/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ArdillasBeta.dir\build.make CMakeFiles/ArdillasBeta.dir/src/main.cpp.obj
+.PHONY : src/main.cpp.obj
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ArdillasBeta.dir\build.make CMakeFiles/ArdillasBeta.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ArdillasBeta.dir\build.make CMakeFiles/ArdillasBeta.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+src/tienda.obj: src/tienda.cpp.obj
+.PHONY : src/tienda.obj
+
+# target to build an object file
+src/tienda.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ArdillasBeta.dir\build.make CMakeFiles/ArdillasBeta.dir/src/tienda.cpp.obj
+.PHONY : src/tienda.cpp.obj
+
+src/tienda.i: src/tienda.cpp.i
+.PHONY : src/tienda.i
+
+# target to preprocess a source file
+src/tienda.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ArdillasBeta.dir\build.make CMakeFiles/ArdillasBeta.dir/src/tienda.cpp.i
+.PHONY : src/tienda.cpp.i
+
+src/tienda.s: src/tienda.cpp.s
+.PHONY : src/tienda.s
+
+# target to generate assembly for a file
+src/tienda.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ArdillasBeta.dir\build.make CMakeFiles/ArdillasBeta.dir/src/tienda.cpp.s
+.PHONY : src/tienda.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -123,6 +256,22 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... ArdillasBeta
+	@echo ... src/ArdillasSkin.obj
+	@echo ... src/ArdillasSkin.i
+	@echo ... src/ArdillasSkin.s
+	@echo ... src/ardillas.obj
+	@echo ... src/ardillas.i
+	@echo ... src/ardillas.s
+	@echo ... src/combate.obj
+	@echo ... src/combate.i
+	@echo ... src/combate.s
+	@echo ... src/main.obj
+	@echo ... src/main.i
+	@echo ... src/main.s
+	@echo ... src/tienda.obj
+	@echo ... src/tienda.i
+	@echo ... src/tienda.s
 .PHONY : help
 
 

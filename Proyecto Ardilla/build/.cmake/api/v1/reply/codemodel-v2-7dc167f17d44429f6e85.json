@@ -8,8 +8,16 @@
 				{
 					"build" : ".",
 					"jsonFile" : "directory-.-Debug-b5805d5c08fd3d92def4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
 					"projectIndex" : 0,
-					"source" : "."
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
 				}
 			],
 			"name" : "Debug",
@@ -20,10 +28,23 @@
 					[
 						0
 					],
-					"name" : "Project"
+					"name" : "ArdillasBeta",
+					"targetIndexes" : 
+					[
+						0
+					]
 				}
 			],
-			"targets" : []
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ArdillasBeta::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ArdillasBeta-Debug-d7fe00bce80478fb2b9a.json",
+					"name" : "ArdillasBeta",
+					"projectIndex" : 0
+				}
+			]
 		}
 	],
 	"kind" : "codemodel",

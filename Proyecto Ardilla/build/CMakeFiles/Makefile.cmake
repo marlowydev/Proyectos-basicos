@@ -7,7 +7,6 @@ set(CMAKE_DEPENDS_GENERATOR "MinGW Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCInformation.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCXXInformation.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCommonLanguageInclude.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeGenericSystem.cmake"
@@ -17,21 +16,15 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeSystemSpecificInformation.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeSystemSpecificInitialize.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
-  "C:/Program Files/CMake/share/cmake-4.4/Modules/Compiler/GNU-C.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Compiler/GNU-CXX.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Compiler/GNU.cmake"
-  "C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CMakeCLinkerInformation.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CMakeCXXLinkerInformation.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CMakeCommonLinkerInformation.cmake"
-  "C:/Program Files/CMake/share/cmake-4.4/Modules/Linker/GNU-C.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Linker/GNU-CXX.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Linker/GNU.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Linker/GNU.cmake"
-  "C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Linker/Windows-GNU-C.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Linker/Windows-GNU-CXX.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Linker/Windows-GNU.cmake"
-  "C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows-GNU-C-ABI.cmake"
-  "C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows-GNU-C.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows-GNU-CXX-ABI.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows-GNU-CXX.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows-GNU.cmake"
@@ -40,7 +33,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/WindowsPaths.cmake"
   "C:/Users/Home/Desktop/Proyecto_2/Proyectos-basicos/Proyecto Ardilla/CMakeLists.txt"
-  "CMakeFiles/4.4.0/CMakeCCompiler.cmake"
   "CMakeFiles/4.4.0/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.4.0/CMakeRCCompiler.cmake"
   "CMakeFiles/4.4.0/CMakeSystem.cmake"
@@ -59,4 +51,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/ArdillasBeta.dir/DependInfo.cmake"
   )

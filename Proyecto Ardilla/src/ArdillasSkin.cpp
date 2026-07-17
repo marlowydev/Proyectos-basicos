@@ -2,7 +2,7 @@
 
 namespace Skins {
 
-    std::string Ardilla_Noob(std::string nombre) {
+    std::string Ardilla_Noob() {
         // Usamos R"( ... )" para el literal de cadena sin formato
         std::string dibujo = R"(
       {` '`-.
@@ -19,7 +19,7 @@ namespace Skins {
         return dibujo;
     }
 
-    std::string Ardilla_Pro(std::string nombre) {
+    std::string Ardilla_Pro() {
         std::string dibujo = R"(    
       {` '`-.
       {       \    (/\._
@@ -34,7 +34,7 @@ namespace Skins {
         
         return dibujo;
     }
-    std::string Ardilla_Noob_nemigo(std::string nombre) {
+    std::string Ardilla_Noob_enemigo() {
         std::string dibujo = R"(
                   .-'` `}
           _./)   /       }
@@ -51,7 +51,7 @@ namespace Skins {
         return dibujo;
     }
 
-    std::string Ardilla_Pro_nemigo(std::string nombre) {
+    std::string Ardilla_Pro_nemigo() {
         std::string dibujo = R"(
                     .-'` `}
           _./)   /       }
