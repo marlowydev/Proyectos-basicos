@@ -23,7 +23,7 @@ namespace Skins {
         std::string dibujo = R"(    
       {` '`-.
       {       \    (/\._
-      {       | /   [■-■].
+      {         | /[■-■].
        `}    /. , '___.'
       {  /_   '-. \_/`\
        {  ,` PRO  \='
@@ -44,14 +44,14 @@ namespace Skins {
         \=' .-'   _`\  {
          `'`;/      `,  }
             _\       ;  }
-        /__`;-...'--'
-          
+        /__`;-...'--.
+
         )";
         
         return dibujo;
     }
 
-    std::string Ardilla_Pro_nemigo() {
+    std::string Ardilla_Pro_enemigo() {
         std::string dibujo = R"(
                     .-'` `}
           _./)   /       }
@@ -60,8 +60,8 @@ namespace Skins {
         /`\_/  , `.    }
          \=' .-'   _`\  {
         `'`;/      `,  }
-         _\       ;  }
-        /__`;-...'--'
+         _\        }
+        /__`;-...'-
 
         )";
         
