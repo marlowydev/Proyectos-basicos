@@ -17,13 +17,8 @@ void esperarTecla() {
     std::cin.get();
 }
 
-void mostrarArdillas(const std::vector<std::unique_ptr<Ardilla>>& ardillas) {
-    if (ardillas.empty()) {
-        std::cout << "Aun no tienes ardillas en tu equipo.\n";
-        return;
-    }
 
-}
+
 
 int main() {
     // Configura el título en la ventana de la consola de Windows
@@ -61,9 +56,8 @@ int main() {
                 limpiarConsola();
                 std::cout << "Pero te advierto... este es un juego muy random Y NO puedes guardar partida (por ahora).\n";
                 esperarTecla();
-                limpiarConsola();
                 std::cout << "Se te ha dado 100 monedas para que empieces tu aventura, haz una buena eleccion no seas tonto.\n";
-
+                esperarTecla();
                 break;
             }
             case 2:

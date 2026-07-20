@@ -36,10 +36,10 @@ public:
 
 class ArdillaNoob : public Ardilla {
 public:
-    ArdillaNoob(std::string nombre);
+    ArdillaNoob(std::string nombre = "Ardilla noob");
 };
 
 class ArdillaPro : public Ardilla {
 public:
-    ArdillaPro(std::string nombre);
+    ArdillaPro(std::string nombre = "Ardilla pro");
 };
