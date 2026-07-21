@@ -3,32 +3,36 @@
 
 class Ardilla {
 protected:
-    // Estadísticas básicas
+    // Estadísticas básicas de la ardilla.
     std::string nombre;
     int vida;
     int vidaMaxima;
     int energia;
     int energiaMaxima;
-    int numero = 0; // ID para la tienda y skins
+    int numero = 0; // ID único para identificarla en la tienda y en futuras mejoras.
 
-    // Sistema de combate simplificado
+    // Sistema de combate simplificado.
     int ataqueBase;
     std::string nombreAtaqueEspecial;
     int multiplicadorDanio;
     int costoEnergiaEspecial;
 
 public:
+    // Constructor base para inicializar los atributos de una ardilla.
     Ardilla(std::string nombre, int vida, int energia, int ataqueBase,
             std::string nombreAtaqueEspecial, int multiplicadorDanio, int costoEnergiaEspecial);
     virtual ~Ardilla() = default;
 
-    // Getters públicos básicos
+    // Getters públicos básicos.
     std::string getNombre();
     int getVida();
     int getEnergia();
     int getNumero();
 
-    // Métodos de combate comunes
+    // Permite asignar o actualizar el ID de una ardilla desde la tienda.
+    void setNumero(int nuevoNumero);
+
+    // Métodos de combate comunes.
     void recibirDanio(int cantidad);
     void usarAtaqueBasico(Ardilla& objetivo);
     void usarAtaqueEspecial(Ardilla& objetivo);
@@ -36,10 +40,12 @@ public:
 
 class ArdillaNoob : public Ardilla {
 public:
-    ArdillaNoob(std::string nombre = "Ardilla noob");
+    // Crea una ardilla básica con el nombre fijo "Ardilla Noob".
+    ArdillaNoob();
 };
 
 class ArdillaPro : public Ardilla {
 public:
-    ArdillaPro(std::string nombre = "Ardilla pro");
+    // Crea una ardilla más fuerte con el nombre fijo "Ardilla Pro".
+    ArdillaPro();
 };

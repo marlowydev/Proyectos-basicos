@@ -1,4 +1,4 @@
-#include "ArdillasSkin.h"
+#include "ardillasSkin.h"
 
 namespace Skins {
 

@@ -6,6 +6,8 @@
 #include <cstdlib>   // Para std::system
 #include <windows.h> // Para SetConsoleTitleA y gestión nativa en Windows
 #include "ardillas.h"
+#include "ardillasSkin.h"
+#include "tienda.h"
 
 void limpiarConsola() {
     std::system("cls");
@@ -23,9 +25,9 @@ void esperarTecla() {
 int main() {
     // Configura el título en la ventana de la consola de Windows
     SetConsoleTitleA("Ardillas Beta");
-
+    Tienda tienda; // Instancia de la tienda para manejar las ardillas compradas
     int opcion = 0;
-    
+    int monedas = 100; // Monedas iniciales para el jugador
 
     while (opcion != 4) {
         limpiarConsola();
@@ -61,7 +63,17 @@ int main() {
                 break;
             }
             case 2:
-                std::cout << "La tienda aun se encuentra en desarrollo.\n";
+                int eleccionTienda;
+                std::cout << "Bienvenido a la tienda, aqui podras comprar ardillas para tu equipo.\n";
+                esperarTecla();
+                limpiarConsola();
+                std::cout << "Ardillas disponibles:\n";
+                tienda.MostrarArdillasDisponibles(monedas);
+                std::cout << "Elige el ID de la ardilla que deseas comprar (1 o 2): ";
+                std::cin >> eleccionTienda;
+                tienda.ComprarArdilla(eleccionTienda, monedas);
+
+
                 break;
             case 3:
                
