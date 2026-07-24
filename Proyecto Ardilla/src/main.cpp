@@ -75,9 +75,30 @@ int main() {
 
 
                 break;
-            case 3:
-               
+                        case 3: {
+                limpiarConsola();
+                std::cout << "=========================================\n";
+                std::cout << "          Tus ardillas compradas         \n";
+                std::cout << "=========================================\n";
+                
+                std::vector<int> compradas = tienda.GetArdillasCompradas();
+                
+                if (compradas.empty()) {
+                    std::cout << "No tienes ardillas...? Como es posible?, Lamento decir que eres muy malo...\n";
+                } else {
+                    for (int id : compradas) {
+                        if (id == 1) {
+                            std::cout << "--- Ardilla Noob ---\n";
+                            std::cout << Skins::Ardilla_Noob() << "\n";
+                        } else if (id == 2) {
+                            std::cout << "--- Ardilla Pro ---\n";
+                            std::cout << Skins::Ardilla_Pro() << "\n";
+                        }
+                    }
+                }
+                esperarTecla();
                 break;
+            }
             default:
                 std::cout << "\nOpcion no valida. Intentalo de nuevo.\n";
                 esperarTecla();

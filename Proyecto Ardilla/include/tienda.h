@@ -25,6 +25,9 @@ public:
     // Compra una ardilla si aún no ha sido adquirida y descuenta el precio de las monedas del main.
     void ComprarArdilla(int numero, int& monedasDisponibles);
 
-    // Muestra el estado de las ardillas disponibles o compradas y recibe las monedas del main para mostrarlas.
+        // Muestra el estado de las ardillas disponibles o compradas y recibe las monedas del main para mostrarlas.
     void MostrarArdillasDisponibles(int monedasDisponibles) const;
+
+    // Devuelve los IDs de las ardillas compradas.
+    std::vector<int> GetArdillasCompradas() const;
 };

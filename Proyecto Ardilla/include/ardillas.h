@@ -26,8 +26,15 @@ public:
     // Getters públicos básicos.
     std::string getNombre();
     int getVida();
-    int getEnergia();
+        int getEnergia();
     int getNumero();
+    int getVidaMaxima();
+    int getEnergiaMaxima();
+    std::string getNombreAtaqueEspecial();
+    int getCostoEnergiaEspecial();
+
+    // Comprueba si tiene energía suficiente para el ataque especial.
+    bool tieneEnergiaSuficiente() const;
 
     // Permite asignar o actualizar el ID de una ardilla desde la tienda.
     void setNumero(int nuevoNumero);

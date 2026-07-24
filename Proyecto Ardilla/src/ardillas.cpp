@@ -36,6 +36,26 @@ int Ardilla::getNumero() {
     return numero;
 }
 
+int Ardilla::getVidaMaxima() {
+    return vidaMaxima;
+}
+
+int Ardilla::getEnergiaMaxima() {
+    return energiaMaxima;
+}
+
+std::string Ardilla::getNombreAtaqueEspecial() {
+    return nombreAtaqueEspecial;
+}
+
+int Ardilla::getCostoEnergiaEspecial() {
+    return costoEnergiaEspecial;
+}
+
+bool Ardilla::tieneEnergiaSuficiente() const {
+    return energia >= costoEnergiaEspecial;
+}
+
 // Permite cambiar el ID de la ardilla cuando se registra en la tienda.
 void Ardilla::setNumero(int nuevoNumero) {
     numero = nuevoNumero;

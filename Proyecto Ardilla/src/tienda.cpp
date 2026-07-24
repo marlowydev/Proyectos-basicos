@@ -73,4 +73,8 @@ void Tienda::MostrarArdillasDisponibles(int monedasDisponibles) const {
     std::cout << "Monedas actuales: " << monedasDisponibles << "\n";
 }
 
+std::vector<int> Tienda::GetArdillasCompradas() const {
+    return ardillas_Compradas;
+}
+
 
