@@ -161,6 +161,7 @@ CMakeFiles/ArdillasBeta.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_vector.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_bvector.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/vector.tcc \
+ C:/msys64/ucrt64/include/c++/15.2.0/ctime \
  C:/msys64/ucrt64/include/windows.h C:/msys64/ucrt64/include/sdkddkver.h \
  C:/msys64/ucrt64/include/excpt.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h \
@@ -383,4 +384,7 @@ CMakeFiles/ArdillasBeta.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/include/sec_api/stralign_s.h \
  C:/msys64/ucrt64/include/winsvc.h C:/msys64/ucrt64/include/mcx.h \
  C:/msys64/ucrt64/include/imm.h \
- C:/Users/Home/Desktop/PROYEC~1/PROYEC~1/PROYEC~1/include/ardillas.h
+ C:/Users/Home/Desktop/PROYEC~1/PROYEC~1/PROYEC~1/include/ardillas.h \
+ C:/Users/Home/Desktop/PROYEC~1/PROYEC~1/PROYEC~1/include/ardillasSkin.h \
+ C:/Users/Home/Desktop/PROYEC~1/PROYEC~1/PROYEC~1/include/tienda.h \
+ C:/Users/Home/Desktop/PROYEC~1/PROYEC~1/PROYEC~1/include/combate.h

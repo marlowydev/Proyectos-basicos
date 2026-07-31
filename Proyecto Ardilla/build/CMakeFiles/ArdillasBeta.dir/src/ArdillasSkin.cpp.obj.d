@@ -1,6 +1,6 @@
 CMakeFiles/ArdillasBeta.dir/src/ArdillasSkin.cpp.obj: \
  C:\Users\Home\Desktop\Proyecto_2\Proyectos-basicos\Proyecto\ Ardilla\src\ArdillasSkin.cpp \
- C:/Users/Home/Desktop/PROYEC~1/PROYEC~1/PROYEC~1/include/ArdillasSkin.h \
+ C:/Users/Home/Desktop/PROYEC~1/PROYEC~1/PROYEC~1/include/ardillasSkin.h \
  C:/msys64/ucrt64/include/c++/15.2.0/string \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/requires_hosted.h \
  C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
