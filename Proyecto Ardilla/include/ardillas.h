@@ -26,12 +26,14 @@ public:
     // Getters públicos básicos.
     std::string getNombre();
     int getVida();
-        int getEnergia();
+    int getEnergia();
     int getNumero();
     int getVidaMaxima();
     int getEnergiaMaxima();
     std::string getNombreAtaqueEspecial();
     int getCostoEnergiaEspecial();
+    int getAtaqueBase() const;
+    int getMultiplicadorDanio() const;
 
     // Comprueba si tiene energía suficiente para el ataque especial.
     bool tieneEnergiaSuficiente() const;

@@ -3,11 +3,13 @@
 #include <memory>
 #include <string>
 #include <vector>
-#include <cstdlib>   // Para std::system
-#include <windows.h> // Para SetConsoleTitleA y gestión nativa en Windows
+#include <cstdlib>
+#include <ctime>
+#include <windows.h>
 #include "ardillas.h"
 #include "ardillasSkin.h"
 #include "tienda.h"
+#include "combate.h"
 
 void limpiarConsola() {
     std::system("cls");
@@ -23,11 +25,20 @@ void esperarTecla() {
 
 
 int main() {
-    // Configura el título en la ventana de la consola de Windows
     SetConsoleTitleA("Ardillas Beta");
-    Tienda tienda; // Instancia de la tienda para manejar las ardillas compradas
+    std::srand(static_cast<unsigned>(std::time(nullptr)));
+    Tienda tienda;
     int opcion = 0;
-    int monedas = 100; // Monedas iniciales para el jugador
+    int monedas = 100;
+
+    std::cout << "En este universo Ardillezco, tu objetivo es tener bajo tu mando a las ardillas mas fuertes...\n";
+    esperarTecla();
+    limpiarConsola();
+    std::cout << "Pero te advierto... este es un juego muy random Y NO puedes guardar partida (por ahora).\n";
+    esperarTecla();
+    std::cout << "Se te ha dado 100 monedas para que empieces tu aventura, haz una buena eleccion no seas tonto.\n";
+    esperarTecla();
+    limpiarConsola();
 
     while (opcion != 4) {
         limpiarConsola();
@@ -53,12 +64,39 @@ int main() {
        
         switch (opcion) {
             case 1: {
-                std::cout << "En este universo Ardillezco, tu objetivo es tener bajo tu mando a las ardillas mas fuertes...\n";
-                esperarTecla();
-                limpiarConsola();
-                std::cout << "Pero te advierto... este es un juego muy random Y NO puedes guardar partida (por ahora).\n";
-                esperarTecla();
-                std::cout << "Se te ha dado 100 monedas para que empieces tu aventura, haz una buena eleccion no seas tonto.\n";
+                std::vector<int> compradas = tienda.GetArdillasCompradas();
+                if (compradas.empty()) {
+                    std::cout << "No tienes ardillas para combatir. Ve a la tienda primero.\n";
+                    esperarTecla();
+                    break;
+                }
+
+                std::cout << "\nElige una ardilla para combatir:\n";
+                for (int id : compradas) {
+                    if (id == 1) std::cout << "[1] Ardilla Noob  ";
+                    else if (id == 2) std::cout << "[2] Ardilla Pro  ";
+                }
+                std::cout << "\nSelecciona el ID: ";
+
+                int eleccion;
+                std::cin >> eleccion;
+
+                bool posee = false;
+                for (int id : compradas) {
+                    if (id == eleccion) { posee = true; break; }
+                }
+
+                if (!posee) {
+                    std::cout << "No tienes esa ardilla.\n";
+                    esperarTecla();
+                    break;
+                }
+
+                std::unique_ptr<Ardilla> ardillaJugador;
+                if (eleccion == 1) ardillaJugador = std::make_unique<ArdillaNoob>();
+                else if (eleccion == 2) ardillaJugador = std::make_unique<ArdillaPro>();
+
+                iniciarCombate(*ardillaJugador, monedas);
                 esperarTecla();
                 break;
             }

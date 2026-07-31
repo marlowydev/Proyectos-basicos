@@ -16,24 +16,6 @@ bool Tienda::EstaComprada(int numero) const {
     return false;
 }
 
-// Comprueba si el precio de la ardilla se puede pagar con las monedas del main.
-bool Tienda::SePuedeComprar(int numero, int& monedasDisponibles) const {
-    if (EstaComprada(numero)) {
-        return false;
-    }
-
-    int precio = 0;
-    if (numero == 1) {
-        precio = PRECIO_ARDILLA_NOOB;
-    } else if (numero == 2) {
-        precio = PRECIO_ARDILLA_PRO;
-    } else {
-        return false;
-    }
-
-    return monedasDisponibles >= precio;
-}
-
 // Compra una ardilla si no estaba comprada antes y descuenta el precio de las monedas del main.
 void Tienda::ComprarArdilla(int numero, int& monedasDisponibles) {
     if (EstaComprada(numero)) {

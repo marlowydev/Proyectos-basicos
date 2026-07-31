@@ -52,6 +52,14 @@ int Ardilla::getCostoEnergiaEspecial() {
     return costoEnergiaEspecial;
 }
 
+int Ardilla::getAtaqueBase() const {
+    return ataqueBase;
+}
+
+int Ardilla::getMultiplicadorDanio() const {
+    return multiplicadorDanio;
+}
+
 bool Ardilla::tieneEnergiaSuficiente() const {
     return energia >= costoEnergiaEspecial;
 }

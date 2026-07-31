@@ -19,9 +19,6 @@ public:
     // Verifica si un ID de ardilla ya está comprado.
     bool EstaComprada(int numero) const;
 
-    // Comprueba si el precio se puede pagar con el dinero disponible en el main.
-    bool SePuedeComprar(int numero, int& monedasDisponibles) const;
-
     // Compra una ardilla si aún no ha sido adquirida y descuenta el precio de las monedas del main.
     void ComprarArdilla(int numero, int& monedasDisponibles);
 
