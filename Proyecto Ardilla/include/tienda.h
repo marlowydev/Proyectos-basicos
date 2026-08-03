@@ -11,7 +11,7 @@ private:
     // Precios fijos y constantes para cada ardilla.
     static const int PRECIO_ARDILLA_NOOB = 30;
     static const int PRECIO_ARDILLA_PRO = 70;
-
+    static const int PRECIO_ARDILLA_POL = 170;
 public:
     // Constructor que inicializa la tienda y deja una ardilla base disponible.
     Tienda();

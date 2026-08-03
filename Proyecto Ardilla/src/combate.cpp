@@ -1,5 +1,4 @@
 #include "combate.h"
-<<<<<<< HEAD
 #include "ardillas.h"
 #include "ardillasSkin.h"
 #include <iostream>
@@ -18,10 +17,14 @@ void iniciarCombate(Ardilla& jugador, int& monedas) {
         enemigo = std::make_unique<ArdillaNoob>();
         skinJugador = Skins::Ardilla_Noob();
         skinEnemigo = Skins::Ardilla_Noob_enemigo();
-    } else {
+    } else if (jugador.getNumero() == 2) {
         enemigo = std::make_unique<ArdillaPro>();
         skinJugador = Skins::Ardilla_Pro();
         skinEnemigo = Skins::Ardilla_Pro_enemigo();
+    } else {
+        enemigo = std::make_unique<ArdillaPol>();
+        skinJugador = Skins::Ardilla_Pol();
+        skinEnemigo = Skins::Ardilla_Pol_enemigo();
     }
 
     std::cout << "=========================================\n";
@@ -113,7 +116,7 @@ void iniciarCombate(Ardilla& jugador, int& monedas) {
         std::cout << "Has perdido el combate. Intentelo de nuevo!\n";
     }
 }
-=======
+
 #include <iostream>
 #include <limits>
 #include <vector>
@@ -206,4 +209,3 @@ bool Combate::iniciar() {
     }
     return false;
 }
->>>>>>> main

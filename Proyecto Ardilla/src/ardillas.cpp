@@ -114,6 +114,10 @@ ArdillaNoob::ArdillaNoob()
 
 // Crea una ardilla más poderosa con un nombre fijo.
 ArdillaPro::ArdillaPro()
-    : Ardilla("Ardilla Pro", 140, 120, 25, "Megacabezazo", 3, 35) {
+    : Ardilla("Ardilla Pro", 180, 120, 25, "Megacabezazo", 3, 35) {
     setNumero(2);
+}
+ArdillaPol::ArdillaPol()
+    : Ardilla("Ardilla Pol", 200, 150, 30, "Ataque Polimórfico", 2, 75) {
+    setNumero(3);
 }

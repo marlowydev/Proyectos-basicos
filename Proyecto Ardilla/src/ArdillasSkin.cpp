@@ -23,7 +23,7 @@ namespace Skins {
         std::string dibujo = R"(    
       {` '`-.
       {       \    (/\._
-      {         | /[■-■].
+      {         | /[#-#].
        `}    /. , '___.'
       {  /_   '-. \_/`\
        {  ,` PRO  \='
@@ -34,6 +34,23 @@ namespace Skins {
         
         return dibujo;
     }
+
+    std::string Ardilla_Pol() {
+        std::string dibujo = R"(    
+      {` '`-.
+      {       \  ==(/\==_
+      {         | /[  O.!
+       `}    /. , '___.'!
+      {  /_   '-. \_/!!
+     {  ,`      \=' ! !!
+      {  ;  <3   /_ ! !!
+       `'--'...-;__\
+
+        )";
+        
+        return dibujo;
+    }
+
     std::string Ardilla_Noob_enemigo() {
         std::string dibujo = R"(
                   .-'` `}
@@ -55,7 +72,7 @@ namespace Skins {
         std::string dibujo = R"(
                     .-'` `}
           _./)   /       }
-        .'[■-■]\ |       }
+        .'[#-#]\ |       }
         '.___.'`.\    {`
         /`\_/  , `.    }
          \=' .-'   _`\  {
@@ -69,5 +86,22 @@ namespace Skins {
 
 
 
+    }
+    //NO ES LA MISMA SKIN
+    std::string Ardilla_Pol_enemigo() {
+        std::string dibujo = R"(
+                    .-'` `}
+          _./)   /       }
+        .'O   \ |       }
+        '.___.'`.\    {`
+        /`\_/  , `.    }
+         \=' .-'   _`\  {
+        `'`;/IMPOSTORA`,  }
+         _\        }>?>
+        /__`;-...'-
+
+        )";
+        
+        return dibujo;
     }
 }

@@ -1,9 +1,9 @@
 #pragma once
-<<<<<<< HEAD
+
 #include "ardillas.h"
 
 void iniciarCombate(Ardilla& jugador, int& monedas);
-=======
+
 #include <memory>
 #include "ardillas.h"
 
@@ -23,4 +23,4 @@ public:
     // Devuelve true si el jugador gana, false si pierde.
     bool iniciar();
 };
->>>>>>> main
+

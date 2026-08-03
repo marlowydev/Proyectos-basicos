@@ -75,6 +75,7 @@ int main() {
                 for (int id : compradas) {
                     if (id == 1) std::cout << "[1] Ardilla Noob  ";
                     else if (id == 2) std::cout << "[2] Ardilla Pro  ";
+                    else if (id == 3) std::cout << "[3] Ardilla Pol  ";
                 }
                 std::cout << "\nSelecciona el ID: ";
 
@@ -95,7 +96,7 @@ int main() {
                 std::unique_ptr<Ardilla> ardillaJugador;
                 if (eleccion == 1) ardillaJugador = std::make_unique<ArdillaNoob>();
                 else if (eleccion == 2) ardillaJugador = std::make_unique<ArdillaPro>();
-
+                else if (eleccion == 3) ardillaJugador = std::make_unique<ArdillaPol>();
                 iniciarCombate(*ardillaJugador, monedas);
                 esperarTecla();
                 break;
@@ -107,10 +108,10 @@ int main() {
                 limpiarConsola();
                 std::cout << "Ardillas disponibles:\n";
                 tienda.MostrarArdillasDisponibles(monedas);
-                std::cout << "Elige el ID de la ardilla que deseas comprar (1 o 2): ";
+                std::cout << "Elige el ID de la ardilla que deseas comprar: ";
                 std::cin >> eleccionTienda;
                 tienda.ComprarArdilla(eleccionTienda, monedas);
-
+                esperarTecla();
 
                 break;
                         case 3: {
@@ -131,6 +132,10 @@ int main() {
                         } else if (id == 2) {
                             std::cout << "--- Ardilla Pro ---\n";
                             std::cout << Skins::Ardilla_Pro() << "\n";
+                        }
+                        else if (id == 3) {
+                            std::cout << "--- Ardilla Pol ---\n";
+                            std::cout << Skins::Ardilla_Pol() << "\n";
                         }
                     }
                 }

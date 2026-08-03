@@ -28,6 +28,8 @@ void Tienda::ComprarArdilla(int numero, int& monedasDisponibles) {
         precio = PRECIO_ARDILLA_NOOB;
     } else if (numero == 2) {
         precio = PRECIO_ARDILLA_PRO;
+    } else if (numero == 3) {
+        precio = PRECIO_ARDILLA_POL;
     } else {
         std::cout << "Ese ID no existe en la tienda.\n";
         return;
@@ -52,6 +54,8 @@ void Tienda::MostrarArdillasDisponibles(int monedasDisponibles) const {
               << (EstaComprada(1) ? "Comprada" : "Disponible") << "\n";
     std::cout << "- ID 2: Ardilla Pro (precio: " << PRECIO_ARDILLA_PRO << ") -> "
               << (EstaComprada(2) ? "Comprada" : "Disponible") << "\n";
+    std::cout << "- ID 3: Ardilla Pol (precio: " << PRECIO_ARDILLA_POL << ") -> "
+              << (EstaComprada(3) ? "Comprada" : "Disponible") << "\n";
     std::cout << "Monedas actuales: " << monedasDisponibles << "\n";
 }
 

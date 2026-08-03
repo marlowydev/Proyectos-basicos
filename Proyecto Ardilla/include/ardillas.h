@@ -58,3 +58,9 @@ public:
     // Crea una ardilla más fuerte con el nombre fijo "Ardilla Pro".
     ArdillaPro();
 };
+
+class ArdillaPol : public Ardilla {
+public:
+    // Crea una ardilla con habilidades especiales y el nombre fijo "Ardilla Pol".
+    ArdillaPol();
+};
