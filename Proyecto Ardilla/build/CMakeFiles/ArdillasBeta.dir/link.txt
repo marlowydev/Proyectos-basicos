@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\ArdillasBeta.dir/objects.a
-C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\ArdillasBeta.dir/objects.a @CMakeFiles\ArdillasBeta.dir\objects1.rsp
-C:\msys64\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\ArdillasBeta.dir/objects.a -Wl,--no-whole-archive -o ArdillasBeta.exe -Wl,--out-implib,libArdillasBeta.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\ArdillasBeta.dir\linkLibs.rsp

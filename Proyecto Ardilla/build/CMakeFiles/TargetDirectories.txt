@@ -1,3 +1,0 @@
-C:/Users/Home/Desktop/Proyecto_2/Proyectos-basicos/Proyecto Ardilla/build/CMakeFiles/ArdillasBeta.dir
-C:/Users/Home/Desktop/Proyecto_2/Proyectos-basicos/Proyecto Ardilla/build/CMakeFiles/edit_cache.dir
-C:/Users/Home/Desktop/Proyecto_2/Proyectos-basicos/Proyecto Ardilla/build/CMakeFiles/rebuild_cache.dir
